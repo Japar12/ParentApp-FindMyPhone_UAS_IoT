@@ -1,0 +1,50 @@
+// src/global.scss
+
+// Impor variabel tema
+@import 'src/theme/variables.scss';
+
+// Definisikan gaya global di sini
+body {
+  font-family: $font-family-base;
+  background-color: $ion-background-color;
+  color: $ion-text-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Contoh gaya untuk ion-header
+ion-header {
+  background-color: $ion-toolbar-background-color;
+  color: $ion-toolbar-text-color;
+}
+
+// Contoh gaya untuk ion-content
+ion-content {
+  --background: $ion-content-background-color;
+}
+
+// Gaya khusus untuk peta
+#map {
+  height: 100vh; // Set peta untuk mengisi seluruh viewport
+  width: 100%;
+}
+
+// Contoh gaya untuk tombol
+ion-button {
+  --background: $ion-button-background-color;
+  --color: $ion-button-text-color;
+}
+
+// Gaya responsif
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
+}
